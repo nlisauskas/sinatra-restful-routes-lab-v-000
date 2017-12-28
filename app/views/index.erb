@@ -12,6 +12,7 @@
       <li>Name: <%= "#{recipe.name}" %></li>
       <li>Ingredients: <%= "#{recipe.ingredients}" %></li>
       <li>Cook Time: <%= "#{recipe.cook_time}" %></li>
+      <li><a href="/recipes/<%=recipe.id%>">View Recipe</a></li>
     </ul>
     <% end %>
 
