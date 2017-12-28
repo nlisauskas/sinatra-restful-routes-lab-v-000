@@ -8,9 +8,9 @@
     <h1>Check Out All Recipes Below:</h1>
     <% @recipes.each do |recipe| %>
     <ul>
-      <li><%= @recipes.name %></li>
-      <li><%= @recipes.ingredients %></li>
-      <li><%= @recipes.cook_time %></li>
+      <li><%= @recipes[:name] %></li>
+      <li><%= @recipes[:ingredients] %></li>
+      <li><%= @recipes[:cook_time] %></li>
     </ul>
     <% end %>
 
