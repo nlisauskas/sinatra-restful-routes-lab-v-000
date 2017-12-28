@@ -8,7 +8,7 @@
     <h1>Check Out All Recipes Below:</h1>
     <% @recipes.each_with_index do |recipe, index| %>
     <ul>
-      <strong>Recipe <%= index %></strong>
+      <strong>Recipe <%= "#{index}" %></strong>
       <li><%= @recipe.name %></li>
       <li><%= @recipe.ingredients %></li>
       <li><%= @recipe.cook_time %></li>
