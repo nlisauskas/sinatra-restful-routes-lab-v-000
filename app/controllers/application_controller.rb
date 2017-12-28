@@ -38,7 +38,7 @@ class ApplicationController < Sinatra::Base
   end
 
   delete '/recipes/:id/delete' do
-    @recipe = Recipe.find_by(params[:id])
+    @recipe = Recipe.find_by(:id => params[:id])
     @recipe.delete
     erb :index
   end
