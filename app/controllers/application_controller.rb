@@ -3,6 +3,7 @@ class ApplicationController < Sinatra::Base
     set :public_folder, 'public'
     set :views, 'app/views'
   end
+
   get '/' do
     erb :index
   end
@@ -22,7 +23,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes/:id' do
-    @recipe = Recipe.find_by(:id => params[:id])
+    @recipe = Recipe.find_by(params[:id])
     erb :show
   end
 
