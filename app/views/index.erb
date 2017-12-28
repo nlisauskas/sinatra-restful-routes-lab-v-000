@@ -6,8 +6,9 @@
   </head>
   <body>
     <h1>Check Out All Recipes Below:</h1>
-    <% @recipes.each do |recipe| %>
+    <% @recipes.each_with_index do |recipe, val| %>
     <ul>
+      <strong><%= "#{val}"%></strong>
       <li><%= "#{recipe.name}" %></li>
       <li><%= "#{recipe.ingredients}" %></li>
       <li><%= "#{recipe.cook_time}" %></li>
